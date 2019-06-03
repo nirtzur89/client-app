@@ -25,7 +25,9 @@ const rrfConfig = {
 //init firebase config
 firebase.initializeApp(firebaseConfig);
 //init firestore
-//const firestore = firebase.firestore();
+const firestore = firebase.firestore();
+const settings = { timestampsInSnapshots: true };
+firestore.settings(settings);
 
 //add reactredux enhancer when making store
 const createStoreWithFirebase = compose(

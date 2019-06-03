@@ -6,6 +6,7 @@ import store from "./store";
 
 import AppNavbar from "./components/layout/AppNavbar";
 import Dashboard from "./components/layout/Dashboard";
+import AddClient from "./components/clients/AddClient";
 
 import "./App.css";
 
@@ -18,6 +19,7 @@ function App() {
           <div className="container">
             <Switch>
               <Route exact path="/" component={Dashboard} />
+              <Route exact path="/client/add" component={AddClient} />
             </Switch>
           </div>
         </div>
